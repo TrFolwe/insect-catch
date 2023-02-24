@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insect Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div selected class="game-screen">
+        <h1 style="line-height: 1.4;">Catch The Insect</h1>
+        <button onclick="windowScroll()" class="catch-btn">Play Game</button>
+    </div>
+    <div class="game-screen">
+        <h1>What is your "favorite" insect?</h1>
+        <ul class="insects">
+            <li>
+                <button insect="fly" class="insect-btn">
+                    <p>Fly</p>
+                    <img class="insect-img" src="./assets/insect_images/fly_insect.png" alt="fly_insect">
+                </button>
+            </li>
+            <li>
+                <button insect="mosquito" class="insect-btn">
+                    <p>Mosquito</p>
+                    <img class="insect-img" src="./assets/insect_images/mosquito_insect.png" alt="mosquito_insect">
+                </button>
+            </li>
+            <li>
+                <button insect="roach" class="insect-btn">
+                    <p>Roach</p>
+                    <img class="insect-img" src="./assets/insect_images/roach_insect.png" alt="roach_insect">
+                </button>
+            </li>
+            <li>
+                <button insect="spider" class="insect-btn">
+                    <p>Spider</p>
+                    <img class="insect-img" src="./assets/insect_images/spider_insect.png" alt="spider_insect">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="game-screen">
+        <header>
+            <span class="time">Time: 00:00</span>
+            <span class="max_score">Max Score: 0</span>
+            <span class="insect_count">Insect: 0</span>
+            <span class="score">Score: 0</span>
+        </header>
+    </div>
+
+    <script src="./game.js"></script>
+</body>
+
+</html>
